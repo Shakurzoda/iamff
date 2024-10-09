@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <header>
+    <header className={style.conteiner}>
       <div>
         <Link to="">
           <img src="/src/assets/logo.png" alt="" />
         </Link>
       </div>
-      <nav>
+      <nav className={style.menuNav}>
         <ul>
           <li>
             <Link to="">Домой</Link>

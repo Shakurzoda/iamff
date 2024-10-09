@@ -1,7 +1,7 @@
 import style from "./Button.module.css";
 
 
-const Button = ({bgColor, textColor, text, borderType}) => {
+const Button = ({bgColor, textColor, text, borderType,}) => {
   return (
     <button
       className={style.btn}

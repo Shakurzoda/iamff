@@ -11,6 +11,10 @@
  font-family: inherit;
 }
 
+.btn:hover {
+ cursor: pointer;
+}
+
 .textColor {
     font-size: 14px;
 }

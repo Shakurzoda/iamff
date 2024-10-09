@@ -1,31 +1,27 @@
-/* import { BrowserRouter, Route, Routes } from "react-router-dom"; */
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Menu from "./Component/Menu/Menu";
-import Section from "./Component/Section/Section";
-/* import About from './Component/Pages/About/About'; */
-/* import cardsData from "./Component/Cards/CardPosts"; */
-import Button from "./Component/Button/Button.jsx";
+import About from "./Component/Pages/About/About";
 import { cardsData } from "./Component/Cards/CardPosts";
-import Card from './Component/Cards/Card.jsx';
+import Home from "./Component/Pages/Home/Home.jsx";
+import CategoryPage from "./Component/Pages/CategoryPage/CategoryPage";
 
 function App() {
   return (
-    /*     <BrowserRouter>
-      <Menu />
-      <Routes>
-        <Route path="" element={<Section />} />
-        <Route path="Home" element={<div>Home</div>} />
-        <Route path="About" element={<About/>} />
-      </Routes>
-    </BrowserRouter> */
     <div className="App">
       <Menu />
-      <Section />
-      <div className="cards-container">
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="Home" element={<div>Home</div>} />
+        <Route path="About" element={<About />} />
         {cardsData.map((card) => (
-          <Card key={card.id} title={card.title} body={card.body} />
+          <Route
+            path={card.link}
+            element={<CategoryPage categoryName={card.title} />}
+            key={card.id}
+          />
         ))}
-      </div>
+      </Routes>
     </div>
   );
 }

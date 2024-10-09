@@ -1,28 +1,23 @@
 import style from "./Menu.module.css";
 import Button from "./../Button/Button";
 import { borderType, buttonColor, textColor } from "../Button/variables";
-/* import { Link } from "react-router-dom"; */
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
     <header>
       <div>
-        <a href="">
+        <Link to="">
           <img src="/src/assets/logo.png" alt="" />
-        </a>
-        {/*         <Link to="">
-          <img src="/src/assets/logo.png" alt="" />
-        </Link> */}
+        </Link>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="">Домой</a>
-            {/* <Link to="">Домой</Link> */}
+            <Link to="">Домой</Link>
           </li>
           <li>
-            <a href="">О нас</a>
-            {/* <Link to="About">О нас</Link> */}
+            <Link to="About">О нас</Link>
           </li>
         </ul>
         <Button

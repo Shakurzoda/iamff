@@ -7,6 +7,7 @@ import MyButton from '../MyButton/MyButton';
 const Menu = () => {
   return (
     <header className={style.conteiner}>
+<<<<<<< HEAD
       <div className={style.menu}>
         <div>
           <Link to="">
@@ -29,6 +30,29 @@ const Menu = () => {
           {/* <MyButton>Перейти</MyButton> */}
         </nav>
       </div>
+=======
+      <div>
+        <Link to="">
+          <img src="/src/assets/logo.png" alt="" />
+        </Link>
+      </div>
+      <nav className={style.menuNav}>
+        <ul>
+          <li>
+            <Link to="">Домой</Link>
+          </li>
+          <li>
+            <Link to="About">О нас</Link>
+          </li>
+        </ul>
+        <Button
+          text="Hello"
+          bgColor={buttonColor.poorgray}
+          borderType={borderType.two}
+          textColor={textColor.white}
+        />
+      </nav>
+>>>>>>> 644e1ac8b01c7ab4244df96a87cdf34049fcc3c4
     </header>
   );
 };

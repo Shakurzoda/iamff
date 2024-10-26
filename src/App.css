@@ -6,8 +6,12 @@
 }
 
 body {
+<<<<<<< HEAD
   /* background-color: rgb(237, 255, 247); */
   background-color: #fff;
+=======
+    background-color: rgb(237, 255, 247);
+>>>>>>> 644e1ac8b01c7ab4244df96a87cdf34049fcc3c4
 }
 
 .App {

@@ -6,9 +6,7 @@
   gap: 5rem;
 }
 
-
 .cardsContainer {
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,21 +33,4 @@
   padding: 16px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-=======
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    align-items: center;
-    flex-wrap: wrap;
-    /* width: 1000px; */
-    margin-top: 50px;
-}
-
-.card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
->>>>>>> 644e1ac8b01c7ab4244df96a87cdf34049fcc3c4
 }

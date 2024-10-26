@@ -6,13 +6,18 @@ import Card from "../../Cards/Card.jsx";
 const Home = () => {
     return (
       <div className={style.home}>
-          <Section />
-          <h1 style={{textAlign: "center", marginTop: '10rem',  textTransform: 'uppercase'}}>Список категорий</h1>
-          <div className={style.cardsContainer}>
-              {cardsData.map((card) => (
-                  <Card key={card.id} card={card} />
-              ))}
-      </div>
+        <Section />
+        <div className={style.cardsContainer}>
+          <h1 style={{ textAlign: "center", textTransform: "uppercase" }}>
+            Категории
+            <hr style={{width: '250px'}}/>
+          </h1>
+          <div className={style.mainConteiner}>
+            {cardsData.map((card) => (
+              <Card key={card.id} card={card} />
+            ))}
+          </div>
+        </div>
       </div>
     );
 };

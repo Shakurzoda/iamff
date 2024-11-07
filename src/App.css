@@ -2,19 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  /* font-family: "Lato", sans-serif; */
 }
 
 body {
-<<<<<<< HEAD
   /* background-color: rgb(237, 255, 247); */
   background-color: #fff;
-=======
-    background-color: rgb(237, 255, 247);
->>>>>>> 644e1ac8b01c7ab4244df96a87cdf34049fcc3c4
 }
 
 .App {
   min-height: 100vh; /* Занимает всю высоту экрана */
   width: 100%;
+  /* font-family: "Lato", serif; */
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
 }

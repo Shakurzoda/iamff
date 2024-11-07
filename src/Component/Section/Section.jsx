@@ -3,7 +3,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import style from "./Section.module.css"; // Импорт стилей
+import style from "./Section.module.css";
+import firstImf from "/src/assets/border-from-flowers-petals.jpg";
+import scnd from "/src/assets/unnamed.jpg";
+import thrd from "/src/assets/unnamed3.jpg";
 
 const Slider = () => {
   return (
@@ -24,10 +27,7 @@ const Slider = () => {
       >
         <SwiperSlide className={style.slide}>
           <div className={style.slideContent}>
-            <img
-              src="/src/assets/border-from-flowers-petals.jpg"
-              alt="Slide 1"
-            />
+            <img src={firstImf} alt="Slide 1" />
             <div className={style.slideTxt}>
               <h2>Текст для первого слайда</h2>
               <p>Описание для первого слайда.</p>
@@ -36,7 +36,7 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide className={style.slide}>
           <div className={style.slideContent}>
-            <img src="/src/assets/unnamed.jpg" alt="Slide 2" />
+            <img src={scnd} alt="Slide 2" />
             <div className={style.slideTxt}>
               <h2>Текст для второго слайда</h2>
               <p>Описание для второго слайда.</p>
@@ -45,7 +45,7 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide className={style.slide}>
           <div className={style.slideContent}>
-            <img src="/src/assets/unnamed (3).jpg" alt="Slide 3" />
+            <img src={thrd} alt="Slide 3" />
             <div className={style.slideTxt}>
               <h2>Текст для третьего слайда</h2>
               <p>Описание для третьего слайда.</p>

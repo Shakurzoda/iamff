@@ -1,8 +1,6 @@
 import style from "./Menu.module.css";
-/* import Button from "./../Button/Button";
-import { borderType, buttonColor, textColor } from "../Button/variables"; */
 import { Link } from "react-router-dom";
-/* import MyButton from "../MyButton/MyButton"; */
+import logo from '/src/assets/123.png'
 
 const Menu = () => {
   return (
@@ -10,7 +8,7 @@ const Menu = () => {
       <div className={style.menu}>
         <div>
           <Link to="">
-            <img src="/src/assets/123.png" alt="" />
+            <img src={logo} alt="Logo" />
           </Link>
         </div>
         <nav className={style.menuNav}>
@@ -26,7 +24,6 @@ const Menu = () => {
               </Link>
             </li>
           </ul>
-          {/* <MyButton>Перейти</MyButton> */}
         </nav>
       </div>
     </header>

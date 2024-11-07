@@ -1,40 +1,57 @@
 import style from "./ItemPage.module.css";
-import imgg from '/src/assets/videoIcon.png'
 
 const ItemPage = () => {
   return (
-    <article className={style.conteiner}>
-      <div className={style.topBaner}>
-        <h2>Название</h2>
-      </div>
+    <div className={style.itemContent}>
       <div className={style.mainContent}>
-        <div className={style.mediaInf}>
-          <div className={style.mainVideo}>
-            <img src={imgg} alt="" />
-          </div>
-          <div className={style.info}>
-            <div className={style.telInfo}>
-              <strong>Tel: +992933333333</strong>
-            </div>
-            <div className={style.socialInfo}>
-              <ul>
-                <li>asd</li>
-                <li>qwe</li>
-                <li>qwe</li>
+        <div className={style.itemImg}>
+          <img src="/src/assets/videoIcon.png" alt="" />
+          <div className={style.itemSocialMedia}>
+            <span className={style.numberInf}>
+              <a href="+992933333333">tel: +992933333333</a>
+            </span>
+            <span className={style.mediaInf}>
+              <ul className={style.socialMedList}>
+                <li>
+                  <a href="">
+                   1
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    2
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                   3
+                  </a>
+                </li>
               </ul>
-            </div>
+            </span>
           </div>
         </div>
-        <div className={style.txtInf}>
-          <h3 style={{ textAlign: "center", paddingTop: "100px" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            obcaecati vitae ex incidunt. Sapiente, deserunt veritatis? Velit
-            itaque, error magni placeat officiis facilis perferendis sunt
-            obcaecati sed dolorum culpa delectus.
-          </h3>
+        <div className={style.itemInf}>
+          <div className={style.itemTitle}>
+            <h2>Описание</h2>
+          </div>
+          <div className={style.itemTxt}>
+            <div className={style.infItem}>
+              <span className={style.txtGrey}>Город</span>{" "}
+              <span className={style.txtStrong}>Душанбе</span>
+            </div>
+            <div className={style.infItem}>
+              <span className={style.txtGrey}>Улица</span>
+              <span className={style.txtStrong}>Исмоили Сомони 2</span>
+            </div>
+            <div className={style.infItem}>
+              <span className={style.txtGrey}>Цена</span>{" "}
+              <span className={style.txtStrong}>Договорная</span>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 

@@ -2,13 +2,14 @@ import style from "./ItemPage.module.css";
 import { FiInstagram } from "react-icons/fi";
 import { BsTelegram } from "react-icons/bs";
 import { MdOutlineWhatsapp } from "react-icons/md";
+import itemImg from "/videoIcon.png";
 
 const ItemPage = () => {
   return (
     <div className={style.itemContent}>
       <div className={style.mainContent}>
         <div className={style.itemImg}>
-          <img src="/public/videoIcon.png" alt="" />
+          <img src={itemImg} alt="" />
           <div className={style.itemSocialMedia}>
             <span className={style.numberInf}>
               <a href="+992933333333">tel: +992933333333</a>

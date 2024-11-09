@@ -4,9 +4,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import style from "./Section.module.css";
-import firstImf from "/public/border-from-flowers-petals.jpg";
-import scnd from "/public/unnamed.jpg";
-import thrd from "/public/unnamed3.jpg";
+import firstImf from "/border-from-flowers-petals.jpg";
+import scnd from "/unnamed.jpg";
+import thrd from "/unnamed3.jpg";
 
 const Slider = () => {
   return (

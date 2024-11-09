@@ -6,16 +6,18 @@ const CategoryPage = ({ categoryName }) => {
     <div className={style.categoryPage}>
       <div className={style.categoryTitle}>{categoryName}</div>
       <div className={style.cardSection}>
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
+        <div className={style.itemMain}>
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+          <PersonCard />
+        </div>
       </div>
     </div>
   );

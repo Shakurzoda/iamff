@@ -6,7 +6,7 @@ import { cardsData } from "./Component/Cards/CardPosts";
 import Home from "./Component/Pages/Home/Home.jsx";
 import CategoryPage from "./Component/Pages/CategoryPage/CategoryPage";
 import ItemPage from "./Component/Pages/ItemPage/ItemPage.jsx";
-import Fotter from './Component/Fotter/Fotter.jsx';
+import Fotter from "./Component/Fotter/Fotter.jsx";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
           </>
         ))}
       </Routes>
-      <Fotter/>
+      <Fotter />
     </div>
   );
 }

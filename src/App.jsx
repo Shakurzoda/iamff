@@ -28,6 +28,14 @@ function App() {
               element={<ItemPage />}
               key={card.id}
             />
+            <Route path="/restaraunt/ItemPage/:id" element={<ItemPage />} />
+            <Route path="/singer/ItemPage/:id" element={<ItemPage />} />
+            <Route path="/registration/ItemPage/:id" element={<ItemPage />} />
+            <Route path="/photographers/ItemPage/:id" element={<ItemPage />} />
+            <Route path="/musicians/ItemPage/:id" element={<ItemPage />} />
+            <Route path="/cars/ItemPage/:id" element={<ItemPage />} />
+            <Route path="/salons/ItemPage/:id" element={<ItemPage />} />
+            <Route path="/presenters/ItemPage/:id" element={<ItemPage />} />
           </>
         ))}
       </Routes>

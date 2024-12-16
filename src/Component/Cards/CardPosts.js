@@ -3,7 +3,7 @@ export const cardsData = [
     id: 1,
     title: "Рестораны",
     body: "qweasdasdqwe",
-    link: "resturant",
+    link: "restaraunt",
     img: "/8541862.png",
   },
   {
@@ -17,21 +17,21 @@ export const cardsData = [
     id: 3,
     title: "Оформление",
     body: "qweasdasdqwe",
-    link: "oformlenie",
+    link: "registration",
     img: "/8715396.png",
   },
   {
     id: 4,
     title: "Фотографы",
     body: "qweasdasdqwe",
-    link: "photo",
+    link: "photographers",
     img: "/7525255.png",
   },
   {
     id: 5,
     title: "Музыканты",
     body: "qweasdasdqwe",
-    link: "music",
+    link: "musicians",
     img: "/8769954.png",
   },
   {
@@ -52,7 +52,7 @@ export const cardsData = [
     id: 7,
     title: "Ведущие",
     body: "qweasdasdqwe",
-    link: "vedushui",
+    link: "presenters",
     img: "/7097523.png",
   },
 ];

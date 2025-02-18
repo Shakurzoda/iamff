@@ -5,6 +5,7 @@ import { MdOutlineWhatsapp } from "react-icons/md";
 import itemImg from "/videoIcon.png";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
+import ThumbsGallery from '../../Swiper/ThumbsGallery';
 
 const ItemPage = () => {
   const { id } = useParams();
@@ -40,7 +41,8 @@ const ItemPage = () => {
     <div className={style.itemContent}>
       <div className={style.mainContent}>
         <div className={style.itemImg}>
-          <img src={itemImg} alt="" />
+          {/* <img src={itemImg} alt="" /> */}
+          <ThumbsGallery/>
           <div className={style.itemSocialMedia}>
             <span className={style.numberInf}>
               <a href={`tel:${itemData.phone}`}>tel: {itemData.phone}</a>
